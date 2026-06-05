@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>인마인드(In Mind) 고객 지원 / Support</title>
+<style>
+  :root{--bg:#FAF6F2;--ink:#37322F;--muted:#948D88;--primary:#FF7E72;--line:#EDE7E1;--card:#fff}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:680px;margin:0 auto;padding:40px 22px 80px}
+  .brand{display:flex;align-items:center;gap:6px;font-weight:800;font-size:1.5rem;text-decoration:none;color:var(--ink)}
+  .brand .h{color:var(--primary)}
+  .toggle{display:inline-flex;background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px;margin:20px 0 8px}
+  .toggle button{border:none;background:none;padding:8px 18px;border-radius:999px;font-size:.9rem;font-weight:700;color:var(--muted);cursor:pointer}
+  .toggle button.on{background:var(--primary);color:#fff}
+  h1{font-size:1.5rem;margin:18px 0 4px}
+  .sub{color:var(--muted);font-size:.95rem;margin-bottom:24px}
+  .card{background:var(--card);border-radius:18px;padding:22px 26px;margin-bottom:16px;border:1px solid var(--line)}
+  h2{font-size:1.05rem;margin:0 0 10px}
+  p,li{color:#555;font-size:.95rem}a{color:var(--primary);text-decoration:none}
+  .mailto{display:inline-flex;align-items:center;gap:6px;background:var(--primary);color:#fff;padding:12px 22px;border-radius:999px;font-weight:700;font-size:.95rem;margin-top:8px}
+  .faq-q{font-weight:700;color:var(--ink);margin-top:16px}.faq-a{color:#555;margin:4px 0 0}
+  footer{margin-top:40px;color:var(--muted);font-size:.8rem;text-align:center}
+  .lang{display:none}.lang.show{display:block}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="brand" href="index.html">in<span class="h">♥</span>mind</a>
+  <div class="toggle">
+    <button id="b-ko" onclick="setLang('ko')">한국어</button>
+    <button id="b-en" onclick="setLang('en')">English</button>
+  </div>
+
+  <!-- 한국어 -->
+  <div class="lang" id="ko">
+    <h1>고객 지원</h1>
+    <p class="sub">불편한 점이나 궁금한 점이 있으면 언제든지 연락해주세요.</p>
+    <div class="card">
+      <h2>📬 문의하기</h2>
+      <p>버그 신고, 기능 제안, 계정 관련 문의 모두 이메일로 받고 있어요. 가능하면 <b>기기 모델·iOS 버전·증상</b>을 함께 알려주세요.</p>
+      <a class="mailto" href="mailto:rlawldnsj8@gmail.com">✉️  rlawldnsj8@gmail.com</a>
+    </div>
+    <div class="card">
+      <h2>❓ 자주 묻는 질문</h2>
+      <p class="faq-q">Q. 회원가입 없이 시작할 수 있나요?</p>
+      <p class="faq-a">네. 첫 실행 시 익명 계정이 자동 생성돼요. 이름·도시만 설정하면 바로 사용할 수 있습니다.</p>
+      <p class="faq-q">Q. 연인과 어떻게 연결하나요?</p>
+      <p class="faq-a">한 사람이 초대코드를 만들고, 상대가 '나' 탭 또는 페어링 화면에서 입력하면 연결돼요. 코드는 1회 사용됩니다.</p>
+      <p class="faq-q">Q. 푸시 알림이 오지 않아요.</p>
+      <p class="faq-a">설정 → 인마인드 → 알림이 켜져 있는지 확인하고, 앱을 완전히 종료 후 다시 실행해보세요.</p>
+      <p class="faq-q">Q. 계정·데이터를 삭제하고 싶어요.</p>
+      <p class="faq-a">앱 내 <b>'나' 탭 → 회원 탈퇴 · 데이터 삭제</b>에서 즉시 처리할 수 있어요. 복구는 불가능합니다.</p>
+      <p class="faq-q">Q. 상대방이 탈퇴하면 어떻게 되나요?</p>
+      <p class="faq-a">공유 기록(보고싶어·할 일·기념일)이 삭제되고, 새 연인과 처음부터 시작할 수 있어요.</p>
+    </div>
+    <div class="card">
+      <h2>🔒 개인정보 처리방침</h2>
+      <p><a href="index.html">→ 개인정보 처리방침 보기</a></p>
+    </div>
+  </div>
+
+  <!-- English -->
+  <div class="lang" id="en">
+    <h1>Support</h1>
+    <p class="sub">Questions or issues? We're happy to help.</p>
+    <div class="card">
+      <h2>📬 Contact</h2>
+      <p>For bug reports, feature requests, or account questions, email us. Including your <b>device model, iOS version, and a short description</b> helps us respond faster.</p>
+      <a class="mailto" href="mailto:rlawldnsj8@gmail.com">✉️  rlawldnsj8@gmail.com</a>
+    </div>
+    <div class="card">
+      <h2>❓ FAQ</h2>
+      <p class="faq-q">Q. Do I need to sign up?</p>
+      <p class="faq-a">No. An anonymous account is created automatically on first launch. Just set your name and city.</p>
+      <p class="faq-q">Q. How do I connect with my partner?</p>
+      <p class="faq-a">One person creates an invite code; the other enters it on the "Me" tab or pairing screen. Each code works once.</p>
+      <p class="faq-q">Q. I'm not getting push notifications.</p>
+      <p class="faq-a">Check Settings → In Mind → Notifications, then fully close and reopen the app.</p>
+      <p class="faq-q">Q. How do I delete my account or data?</p>
+      <p class="faq-a">In the app: <b>Me tab → Delete account · data</b>. Deletion is immediate and irreversible.</p>
+      <p class="faq-q">Q. What if my partner deletes their account?</p>
+      <p class="faq-a">Shared records (miss-you taps, to-dos, milestones) are removed, and you can start fresh with a new partner.</p>
+    </div>
+    <div class="card">
+      <h2>🔒 Privacy Policy</h2>
+      <p><a href="index.html">→ View the privacy policy</a></p>
+    </div>
+  </div>
+
+  <footer>© 2026 In Mind · <a href="mailto:rlawldnsj8@gmail.com">rlawldnsj8@gmail.com</a></footer>
+</div>
+<script>
+  function setLang(l){
+    document.getElementById('ko').classList.toggle('show', l==='ko');
+    document.getElementById('en').classList.toggle('show', l==='en');
+    document.getElementById('b-ko').classList.toggle('on', l==='ko');
+    document.getElementById('b-en').classList.toggle('on', l==='en');
+    document.documentElement.lang = l;
+  }
+  setLang((navigator.language||'en').toLowerCase().startsWith('ko') ? 'ko' : 'en');
+</script>
+</body>
+</html>
